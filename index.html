@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>Idle-Clicker</title>
+	<link rel = "stylesheet" type="text/css" href="interface css.css"  />
+
+		<style>
+		</style>
+
+	</head>
+
+	<body>
+		<div  class="section">
+			<h1>Age I</h1>
+			<p>The beginning... to an end?...</p>
+		</div>
+		
+		<div class="navbar">
+			<a href="#" class="active">Main</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#" class="right">Info</a>
+		</div>
+		
+	<div class="clearfix">
+			<div class="section3"><h2> <span>Resources</span></h2>
+				<div>
+				<div class="resources"> <input type="image" value="play" src="images/wood.png" alt="wood" name="woodImg" class="woodImg" onClick="woodClick(1); axeHit.play()" /><br /> <audio id="axeHit" src="sounds/axehit.wav"/> </div>
+				<div class="resources"> <input type="image" value="play" src="images/rock.png" alt="rock" name="rockImg" class="rockImg" onClick="stoneClick(1); pickaxeHit.play()" /> <audio id="pickaxeHit" src="sounds/pickaxeHit.wav"/> </div>
+				<div class="resources"> <img src="images/grain.png" alt="grain" name="grainImg" class="grainImg" /> </div>
+				<div class="resources"> <img src="images/coin.png" alt="coin" name="coinImg" class="coinImg" /> </div>
+				</div>
+				<br />
+		<div>
+			<table>
+				<tr>
+				<th>Wood</th>
+				<td><span id="wood">0</span></td>
+				</tr>
+				<tr>
+				<th>Stone</th>
+				<td><span id="stone">0</span></td>
+				</tr>
+				<tr>
+				<th>Food</th>
+				<td><span id="grain">0</span></td>
+				</tr>
+				<tr>
+				<th>Coins</th>
+				<td><span id="coins">0</span></td>
+				</tr>
+			</table>
+		</div>
+			</div>
+			
+		<div class="section2"><h2> <span>Shop</span></h2>
+			<div class="section3"> <h3>Trade</h3>
+				<button class="shopBTNwood" onclick="sellwood1(1);shopsell.play()">Wood<br />Sell:<span id="XXX">1</span>Coins:<span id="XXX">1</span></button>
+				<button class="shopBTNstone" onclick="sellstone1(1);shopsell.play()">Stone<br />Sell:<span id="XXX">1</span>Coins:<span id="XXX">1</span></button>
+			</div>
+			<div class="section3"> <h3>Hire</h3>
+					<button onClick="buyWoodcutter()">Woodcutter<br />Cost:<span id="WoodcutterCost">10</span></button>
+					<button onClick="buyMiner()">Miner<br />Cost:<span id="MinerCost">10</span></button>
+			</div>
+			<div class="section3">
+					
+			</div>
+			<div class="section3">
+			
+			</div>
+		</div>		
+	</div>
+		<div class="section">
+			<h3>It's a WIP, don't panic!</h3>
+			<p style="float:right;font-size:16px"><i>Version: 0.0.11</i></p>
+		</div>
+	<script type="text/javascript" src="javascript.js"></script>
+	</body>
+	
+	
+</html>
