@@ -18,6 +18,19 @@
 			wood = wood - 1}
 			document.getElementById("coins").innerHTML = coins;
 	};
+		function sellstone1(){
+			if(stone >= 1){
+			coins = coins + 1
+			stone = stone - 1}
+			document.getElementById("stone").innerHTML = stone;
+			document.getElementById("coins").innerHTML = coins;
+	};
+		function sellwood(){
+			if(wood >= 1){
+			coins = coins + 1
+			wood = wood - 1}
+			document.getElementById("coins").innerHTML = coins;
+	};
 	
 	loadData();
 	
@@ -51,58 +64,8 @@
 		saveData();
 	};
 	
-		function sellwood10(){
-			if(wood >= 10){
-			coins = coins + 10
-			wood = wood - 10}
-			document.getElementById("wood").innerHTML = wood;
-			document.getElementById("coins").innerHTML = coins;
-	};
+		
 	
-		function sellwood100(){
-			if(wood >= 100){
-			coins = coins + 100
-			wood = wood - 100}
-			document.getElementById("wood").innerHTML = wood;
-			document.getElementById("coins").innerHTML = coins;
-	};
-	
-		function sellwood1000(){
-			if(wood >= 1000){
-			coins = coins + 1000
-			wood = wood - 1000}
-			document.getElementById("wood").innerHTML = wood;
-			document.getElementById("coins").innerHTML = coins;
-	};
-		function sellstone1(){
-			if(stone >= 1){
-			coins = coins + 1
-			stone = stone - 1}
-			document.getElementById("stone").innerHTML = stone;
-			document.getElementById("coins").innerHTML = coins;
-	};
-		function sellstone10(){
-			if(stone >= 10){
-			coins = coins + 10
-			stone = stone - 10}
-			document.getElementById("stone").innerHTML = stone;
-			document.getElementById("coins").innerHTML = coins;
-	};
-		function sellstone100(){
-			if(stone >= 100){
-			coins = coins + 100
-			stone = stone - 100}
-			document.getElementById("stone").innerHTML = stone;
-			document.getElementById("coins").innerHTML = coins;
-	};
-		function sellstone1000(){
-			if(stone >= 1000){
-			coins = coins + 1000
-			stone = stone - 1000}
-			document.getElementById("stone").innerHTML = stone;
-			document.getElementById("coins").innerHTML = coins;
-	};
-
 	var Woodcutter = 0;
 		function buyWoodcutter(){
 			var WoodcutterCost = Math.floor(10 * Math.pow(1.15,Woodcutter));     //works out the cost of this cursor
